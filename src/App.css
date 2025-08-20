@@ -1,0 +1,176 @@
+/* General Styles */
+:root {
+  --primary-color: #0077b5; /* LinkedIn Blue */
+  --secondary-color: #2c3e50;
+  --text-color: #333;
+  --bg-color: #f4f7f6;
+  --light-bg: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+section {
+  padding: 80px 0;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 3em;
+}
+h2 {
+  font-size: 2.5em;
+  text-align: center;
+}
+h3 {
+  font-size: 1.5em;
+}
+p {
+  font-size: 1.1em;
+}
+
+/* Buttons */
+.cta-button {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+  background-color: #005f8d;
+  transform: translateY(-3px);
+}
+
+/* Hero Section */
+.hero {
+  background-color: var(--light-bg);
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 150px 0;
+  border-bottom: 5px solid var(--primary-color);
+}
+
+.hero-content h1 {
+  font-size: 4em;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.hero-content p {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+
+/* About & Benefits Section */
+.about-section,
+.testimonials-section,
+.cta-final {
+  background-color: var(--light-bg);
+}
+
+.about-section {
+  padding: 80px 0;
+}
+
+.benefits-section {
+  background-color: var(--bg-color);
+  padding: 80px 0;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.benefit-item {
+  background-color: var(--light-bg);
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.benefit-item:hover {
+  transform: translateY(-10px);
+}
+
+/* Testimonials Section */
+.testimonial-card {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 50px auto 0;
+  text-align: center;
+}
+
+.testimonial-card p {
+  font-size: 1.2em;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.testimonial-card h4 {
+  font-weight: normal;
+  color: #fff;
+}
+
+/* Final CTA Section */
+.cta-final {
+  text-align: center;
+  padding: 100px 0;
+  background-color: var(--secondary-color);
+}
+
+.cta-final h2 {
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  .hero {
+    padding: 100px 0;
+  }
+  .hero-content p {
+    font-size: 1.2em;
+  }
+}
